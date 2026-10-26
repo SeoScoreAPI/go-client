@@ -27,7 +27,7 @@ import (
 )
 
 func main() {
-	// Get a free API key (2 audits/day, no credit card) at https://seoscoreapi.com/#signup
+	// Get a free API key (20 audits a month, no credit card) at https://seoscoreapi.com/#signup
 	client := seoscoreapi.New() // reads SEOSCORE_API_KEY; or seoscoreapi.WithAPIKey("ssa_...")
 
 	result, err := client.Audit(context.Background(), "https://example.com", nil)
